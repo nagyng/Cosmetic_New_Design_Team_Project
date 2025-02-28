@@ -1,0 +1,58 @@
+#container {
+    position: relative; /* 절대 위치를 위한 부모 요소 */
+    height: 100%; /* 부모 높이를 충분히 줘야 함 */
+    background-color: white;
+  }
+  
+.bx {
+    background-color: blue;
+}
+  #sticky-box {
+    position: sticky;
+    top: 20rem;
+    left: 155px;
+    padding: 20px;
+    transition: all 1s;
+    width: 50px;
+    z-index: 10; /* mbubtop보다 위에 있도록 설정 */
+  }
+  
+  .fixed {
+    position: fixed !important;
+    top: 50px !important; /* 화면 상단 50px 위치에 고정 */
+    background-color: red;
+  }
+  
+  .absolute {
+    position: absolute !important;
+    bottom: 0; /* 부모 요소의 마지막 위치에서 멈춤 */
+    
+  }
+  
+  .bg {
+    background-color: white;
+  }
+
+  .mbubtop {
+    width: 99vw;
+  z-index: 5; /* 스티키보다 낮게 설정 */
+  position: relative; /* 배경처럼 깔리도록 설정 */
+  top: 10rem;
+  }
+
+  .mbubcbtm {
+    width: 99vw;
+z-index: 12;
+position: absolute;
+top: 47.5rem;
+
+  }
+  
+
+  .mbu {
+    width: 50px;
+    z-index: 10; /* 스티키 요소가 가장 위에 오도록 설정 */
+    position: relative; /* 기본적으로 위치 설정 */
+    /* transition: opacity 0.5s ease-out; 서서히 사라지는 효과 */
+}
+.bx {clear: both;}
