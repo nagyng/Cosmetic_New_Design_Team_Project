@@ -322,6 +322,7 @@ main h1 {
     border-bottom: 2px solid var(--dark_green1);
   }
   .newbox {
+  
     position: relative;
     top: -26rem;
     display: flex;

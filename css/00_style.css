@@ -40,7 +40,7 @@
 
 body{
     font-family: "Gowun Dodum", serif;
-    cursor: url(/img/커서최종.png), default; 
+    cursor: url(../img/커서최종.png), default; 
     overflow-x: hidden;   
 }
 
