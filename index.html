@@ -37,51 +37,73 @@
 
     <!-- 빙글빙글 도는거 스타일 -->
     <style>
-    
       .daegul {
-  width: 100%;
-  height: 15rem;
-  overflow: hidden;
-  white-space: nowrap;
-  background: white;
-  color : var(--dark_green1);
-  font-size: 8rem;
-  padding: 10px 0;
-  position: relative;
-  font-family: "DM Serif Display", serif;
-  font-style: italic;
-}
+        -webkit-text-stroke: 0.7px var(--dark_green1);
+        color: white;
+        width: 100%;
+        height: 5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        background: white;
 
-.daegul-inner {
-  display: flex;
-  gap: 50px; /* 텍스트 간격 조정 */
-  width: max-content; /* 내용 크기만큼 설정 */
-  animation: daegul 15s linear infinite;
-}
+        font-size: 3rem;
+        position: relative;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+      }
 
-.daegul:hover .daegul-inner {
-  animation: daegul-reverse 15s linear infinite;
-}
+      .daegul-inner {
+        display: flex;
+        gap: 50px; /* 텍스트 간격 조정 */
+        width: max-content; /* 내용 크기만큼 설정 */
+        animation: daegul 15s linear infinite;
+        margin-top: 1rem;
+      }
 
-@keyframes daegul {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
+      .daegul:hover .daegul-inner {
+        animation: daegul-reverse 15s linear infinite;
+      }
 
-@keyframes daegul-reverse {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
+      @keyframes daegul {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
 
+      @keyframes daegul-reverse {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
 
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        .daegul {
+          font-size: 5rem;
+          height: 8rem;
+        }
+        .daegul-inner {
+          margin-top: 1.2rem;
+        }
+      }
+
+      @media screen and (min-width: 1440px) {
+        .daegul {
+          -webkit-text-stroke: 1.5px var(--dark_green1);
+          color: white;
+          font-size: 8rem;
+          height: 12rem;
+          margin-bottom: 2rem;
+          padding: 0;
+          margin-bottom: 5rem;
+          position: absolute;
+        }
+      }
     </style>
   </head>
   <body>
@@ -95,10 +117,11 @@
       </header>
       <!-- 탑(고정) 소목 로고, 장바구니메뉴 등등  -->
       <nav>
-        <div class="somokfst">
-          <h1>SOMOK</h1>
-        </div>
-
+        <a href="./index.html">
+          <div class="somokfst">
+            <h1>SOMOK</h1>
+          </div>
+        </a>
         <div class="cart">
           <img src="./img/카트.png" alt="장바구니메뉴" />
         </div>
@@ -120,7 +143,7 @@
             <a href="./index.html" class="MNSM">SOMOK</a>
             <a href="./jini copy.html" class="mn1">PERSONAL SERVICE</a>
             <a href="./brandinforsm.html" class="mn2">BRAND STORY</a>
-            <a href="#" class="mn3">EVENT</a>
+            <a href="./00_sujung.html" class="mn3">EVENT</a>
             <a href="./best_ng.html" class="mn4">BEST</a>
             <a href="./06_new-01.html" class="mn5">NEW</a>
           </div>
@@ -285,31 +308,45 @@
         <div class="menubar">
           <ul class="구구">
             <li>
-              <div a href="#" class="hbg">
-                <img src="./img/햄버거메뉴.png" alt="장바구니메뉴" />
+              <a href="./brandinforsm.html">
+              <div a href="./brandinforsm.html" class="hbg">
+                <span class="texthd1">BRAND<br />STORY</span>
+                <img src="./img/하단메뉴이모티콘.png" alt="장바구니메뉴" />
               </div>
+            </a>
             </li>
 
             <li>
+              <a href="./00_sujung.html"></a>
               <div a href="#" class="nmi">
-                <img src="./img/나뭇잎.png" alt="장바구니메뉴" />
+                <span class="texthd2">&nbsp;<br />EVENT<br />&nbsp;</span>
+                <img src="./img/하단메뉴이모티콘.png" alt="장바구니메뉴" />
               </div>
             </li>
 
             <li class="mid">
-              <div a href="#" class="dgrm">
+              <a href="./jini copy.html">
+              <span class="texthd3">PERSONAL<br />SERVICE</span>
+              <div a href="./jini copy.html" class="dgrm">
                 <p>SOMOK</p>
               </div>
+            </a>
             </li>
             <li>
-              <div a href="#" class="heart">
-                <img src="./img/하트메뉴.png" alt="장바구니메뉴" />
+              <a href="./06_new-01.html">
+              <div a href="./06_new-01.html" class="heart">
+                <span class="texthd4">&nbsp;<br />NEW<br />&nbsp;</span>
+                <img src="./img/하단메뉴이모티콘.png" alt="장바구니메뉴" />
               </div>
+            </a>
             </li>
             <li>
-              <div a href="#" class="user">
-                <img src="./img/유저메뉴.png" alt="장바구니메뉴" />
+              <a href="./best_ng.html">
+              <div a href="./best_ng.html" class="user">
+                <span class="texthd5">&nbsp;<br />BEST<br />&nbsp;</span>
+                <img src="./img/하단메뉴이모티콘.png" alt="장바구니메뉴" />
               </div>
+            </a>
             </li>
           </ul>
         </div>
