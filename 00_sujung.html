@@ -15,13 +15,36 @@
 
     <!-- css 모음-->
     <link rel="stylesheet" href="./css/00_style.css" />
-    <link rel="stylesheet" href="./css/00_sujung.css" />
+    <!-- <link rel="stylesheet" href="./css/00_sujung.css" /> -->
+    <link rel="stylesheet" href="./css/00_sujung.css">
+  
     <!-- 수민 하단메뉴바 css -->
   </head>
   <body>
     <!-- 본문 (달라짐)  -->
     <div class="EVENT">
       <!-- 메인배너 -->
+
+
+      <div class="somok">
+        <div class="menususu">
+          <button class="menususu-button">
+          <h1> somok</h1> 
+          </button>
+          <div class="menususu-content">
+            <a href="./index.html" class="MNSM">SOMOK</a>
+            <a href="./jini copy.html" class="mn1">PERSONAL SERVICE</a>
+            <a href="./brandinforsm.html" class="mn2">BRAND STORY</a>
+            <a href="./00_sujung.html" class="mn3">EVENT</a>
+            <a href="./best_ng.html" class="mn4">BEST</a>
+            <a href="./06_new-01.html" class="mn5">NEW</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
       <div class="SJmain clear">
         <!-- <div class="image-container">
           <img src="./img/반투명 배너.jpg" alt="배너사진" id="image" class="hidden">
@@ -32,7 +55,8 @@
               <div class="swiper-slide">
                 <!-- TODO : 1번째 배경이미지 -->
                 <div class="banner"></div>
-              </div>
+            </div>
+
               <div class="swiper-slide">
                 <!-- TODO : 2번째 배경이미지 -->
                 <div class="blackmain"></div>
@@ -124,7 +148,9 @@
           </div>
 
           <div class="tkgkd">
-            <button class="big-button">안내사항 자세히 보기</button>
+            <button class="big-button" id="big-button">
+              안내사항 자세히 보기
+            </button>
           </div>
         </div>
       </div>
@@ -277,5 +303,16 @@
 
     <!-- 슬라이드메뉴 -->
     <script src="/js/00_sujung.js"></script>
+    <script>document
+        .querySelector(".menususu")
+        .addEventListener("mouseover", function () {
+          this.classList.add("active"); // 메뉴 열기
+        });
+        
+        document
+        .querySelector(".menususu")
+        .addEventListener("mouseleave", function () {
+          this.classList.remove("active"); // 메뉴 닫기
+        });</script>
   </body>
 </html>
