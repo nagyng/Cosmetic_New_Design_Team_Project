@@ -17,10 +17,13 @@
     .bboxx {
         float: right;
         position: relative;
-        width: 5rem;
+        display: flex;
+        width: 10rem;
         height: 6rem;
-        top: -4rem; 
-        right: 1rem;}
+        top: -5rem; 
+        right: 2rem;
+        gap: 15px;
+    }
 
     .menususu {
         position: relative;
@@ -34,15 +37,18 @@
     .menususu-button {
         scale: 2.3;
         position: absolute;
-        top: -5.5rem;
-        left: 230px; 
+        top: -7rem;
+        left: 210px; 
         background-color: rgba(25, 69, 57, 0);;
         padding: 10px 20px;
         border: none;
         cursor: pointer;
+        
     
     }
-
+    .menususu-button img {
+        width: 2rem;
+    }
     .menususu-content {
         position: fixed;
         top: 0px;

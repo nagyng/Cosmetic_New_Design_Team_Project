@@ -1,87 +1,45 @@
-.container {
-  position: relative; /* 절대 위치를 위한 부모 요소 */
-  height: 15.5rem; /* 부모 높이를 충분히 줘야 함 */
-  background-color: white;
-}
+.container { position: relative; /* 절대 위치를 위한 부모 요소 */
+ height: 13rem; background-color: white; } 
 
-.bx {
-  background-color: blue;
-}
-#sticky-box {
-  position: sticky;
-  top: 20rem;
-  left: 9.5rem;
-  padding: 1.25rem;
-  transition: all 1s;
-  width: 3.125rem;
-  z-index: 10; /* mbubtop보다 위에 있도록 설정 */
-}
+.bx { background-color: blue; } 
+#sticky-box { position: sticky; top: 10rem; transition: all 1s; width: 2rem; z-index: 50; margin: 0 auto; }
 
-.fixed {
-  position: fixed !important;
-  top: 3.125rem !important; /* 화면 상단 50px 위치에 고정 */
-  background-color: red;
-}
+.fixed { position: fixed !important; top: 7rem !important; background-color: red; } 
 
-.absolute {
-  position: absolute !important;
-  bottom: 0; /* 부모 요소의 마지막 위치에서 멈춤 */
-  
-}
-.mt {
-  width: 100vw;
-  position: relative;
-  top: -5rem;
-}
+.absolute { position: absolute !important; 
+ }
+
+
+.mt { width: 100vw; position: absolute; margin-top: -4.75rem; } 
 .mb {
+ width: 100vw;position: absolute;z-index: 100;margin-top: -4.9rem;}
 
-  width: 100vw;
-  height: 15.5rem;
-  position: relative;
-  top:-20.75rem;
-}
+.mbubtop { width: 100vw;
 
-.mbubtop {
-  width: 100vw;
-z-index: 5; /* 스티키보다 낮게 설정 */
-position: relative; /* 배경처럼 깔리도록 설정 */
-top: 0.25rem;
 }
 
 .mbubcbtm {
-  width: 100vw;
-z-index: 12;
-position: absolute;
+ width: 100vw;
 
 }
 
 
-.mbu {
-  width: 2rem;
-  z-index: 10; /* 스티키 요소가 가장 위에 오도록 설정 */
-  position: relative; /* 기본적으로 위치 설정 */
-  margin-right: 10rem;
-  /* transition: opacity 0.5s ease-out; 서서히 사라지는 효과 */
-}
-.bx {clear: both;}
+.mbu { width: 2rem; position: relative; 
+ padding: 0; } 
+.bx { clear: both; } 
 
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-.container { height: 32rem;}
-.mt { left: -5rem; width: 110.4vw;}
-.mbubtop { left: 0; top: -0.7rem;}
-.mbubcbtm {top: -0.9rem}
-.mb {left: -5rem; width: 110.4vw; height: 32rem; top: -37.3rem;}
-.mbu { margin-left: 12rem; width: 3rem;}
 
-}
+@media screen and (min-width: 768px) and (max-width: 1439px) {.container { height: 30rem; } 
+.mbubtop { margin: 0; } 
+.mbubcbtm { margin: 0; } 
+.mbu { margin: 0; width: 3rem; } 
+ }
 
-@media screen and (min-width: 1440px) {
-.container { height: 57vh;}
-.mt { width: 100vw; top: -7.9rem;}
-.mb { width: 100vw; top : -68.5rem}
-.mbubtop { width: 100%;}
-.mbubcbtm { width: 100%;}
-.mbu { width: 5rem; margin-right: 0; margin-left: 32.5rem;}
-
-}
+@media screen and (min-width: 1440px){
+ .container { height: 60rem; } 
+ .mbubtop { margin: 0; } 
+ .mbubcbtm { margin: 0; } 
+ .mbu { margin: 0; width: 5rem; } 
+ } 
+ 
