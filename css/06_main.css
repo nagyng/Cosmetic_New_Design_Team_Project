@@ -35,7 +35,7 @@
  .top { width: 80%; height: 100%; margin-top: 5rem; } 
  .pic1 img { content: url("../img/Frame\ 8.png"); width: 15rem; }
   .pic2 img { content: url("../img/Frame\ 9.png"); width: 15rem; }
- aside { float: right; width: 50%; border-left: 1px solid grey; height: 914px; } 
+ aside { margin-top: 10rem; float: right; width: 50%; border-left: 1px solid grey; height: 914px; } 
  #jin { height: 20%; } 
  .cos { height: 490px; } 
  }

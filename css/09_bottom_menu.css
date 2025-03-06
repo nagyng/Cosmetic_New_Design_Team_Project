@@ -2,6 +2,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
 .구구 ul { height: 6.25rem; position: sticky; top: 37.5rem; } 
 
 .hbg { float: left; margin-top: 10px; } 
+
 .hbg img { width: 1.875rem; margin-top: 10px; } 
 .nmi { float: left; margin-top: 10px; } 
 .nmi img { width: 1.875rem; } 
@@ -16,6 +17,88 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
 .구구 li img { margin: 0.9375rem; } 
 
 .구구 li { margin-left: 0.3rem; } 
+.texthd1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: var(--dark_green1);
+    font-size: 14px;
+    font-weight: bold;
+  }  
+  .hbg:hover .texthd1 {
+    opacity: 1;
+    background-color: white;
+  }
+.texthd2 {
+    position: absolute;
+    top: 48%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: var(--dark_green1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.nmi:hover .texthd2 {
+    opacity: 1;
+    background-color: white;
+  }
+
+  .texthd3 {
+    position: absolute;
+    top: 30%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.mid:hover .texthd3 {
+    opacity: 1;
+    background-color: var(--dark_green1);
+    text-align: center;
+  }
+
+  .texthd4 {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: var(--dark_green1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.heart:hover .texthd4 {
+    opacity: 1;
+    background-color: white;
+  }
+  .texthd5 {
+    position: absolute;
+    top: 43%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: var(--dark_green1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.user:hover .texthd5 {
+   
+    opacity: 1;
+    background-color: white;
+  }
+  
+  
+
 
 
 
@@ -33,9 +116,36 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
  color: white; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; } 
  .구구 { 
  gap: 2rem; } 
+
+.texthd1 {
+    left: 19%;
+}
+.texthd2 {
+    left: 32%;
+}
+
+.texthd3 {
+    font-size: 1.3rem;
+    left: 50.5%;
+    top: 25%;
+}
+.texthd4 {
+    left: 69%;
+    top: 49%;
+}
+.texthd5 {
+    left: 82%;
+    top: 49%;
+}
+
+.texthd1, .texthd2, .texthd4, .texthd5 {
+    font-size: 1rem;
+}
+
 }
 
 
 @media screen and (min-width: 1440px) { /* 1024px = 64rem */
  menu { display: none; } 
+ #page {width: 99vw;} 
  }

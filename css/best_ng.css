@@ -8,17 +8,15 @@ body { overflow-x: hidden; height: 100%; }
 .bestbanner_text_large { font-size: 1.5rem; margin-top: 6rem; font-family: "DM Serif Display", serif; font-weight: lighter; float: right; letter-spacing: 0.1875rem; } 
 
 .bestbanner_btn { position: absolute; left: 10rem; top: 5rem; text-align: center; margin-right: 2rem; } 
-.btn_shopall { width: 9.375rem; height: 2.3rem; background-color: var(--dark_green1); /* background-color: #dad9cf; */
- float: right; margin-right: 1rem; } 
+.btn_shopall { width: 9.375rem; height: 2.3rem; background-color: var(--dark_green1);  float: right; margin-right: 1rem; } 
 .btn_shopall > p { padding-top: 0.2rem; margin: auto; text-align: center; align-items: center; font-family: "DM Serif Display", serif; color: white; margin-top: 0.5rem; font-size: 1rem; letter-spacing: 0.1875rem; } 
-.btn_notification { width: 2.5rem; height: 2.5rem; margin: 0 0.5rem; border-radius: 100%; background-color: var(--dark_green1); /* background-color: #dad9cf; */
- transition: color 0.3s ease, background-color 0.3s ease; float: right; padding: 0; border: 0.5 solid var(--dark_green1); } 
+.btn_notification { width: 2.5rem; height: 2.5rem; margin: 0 0.5rem; border-radius: 100%; background-color: var(--dark_green1); transition: color 0.3s ease, background-color 0.3s ease; float: right; padding: 0; border: 0.5 solid var(--dark_green1); } 
 .btn_notification > img { width: 1.5rem; height: 1.5rem; margin: 0; padding: 0; text-align: center; align-items: center; justify-content: center; border: none; } 
 
 .btn_notification:hover,
 .btn_notification > img:hover,
-.btn_shopall:hover {  background-color: #dad9cf;  transition: color 0.3s ease, background-color 0.3s ease; cursor: pointer; border: 0.5 solid var(--dark_green1); } 
-.btn_shopall p:hover { transition: color 0.3s ease; }
+.btn_shopall:hover { background-color: #dad9cf; transition: color 0.3s ease, background-color 0.3s ease; cursor: pointer; border: 0.5 solid var(--dark_green1); } 
+.btn_shopall p:hover { transition: color 0.3s ease; } 
 .best_menulist_container { margin: 0; width: 100%; height: 100%; text-align: center; align-items: center; justify-content: center; } 
 .best_menulist { margin: 0; width: 100%; height: auto; text-align: center; align-items: center; justify-content: center; } 
 .best_menulist:hover { cursor: pointer; } 
@@ -48,25 +46,21 @@ body { overflow-x: hidden; height: 100%; }
 .sale_price { margin: 0.5rem; font-size: 1.5rem; font-weight: bold; text-decoration-line: none; } 
 .original_price,
 .sale_price { font-family: "DM Serif Display", serif; } 
-.btn_shoppingcart { margin: 0.5rem; width: 2.5rem; height: 2.5rem; border-radius: 100%; background-color: var(--dark_green1); border: 0.5 solid var(--dark_green1); /* background-color: #dad9cf; */}
-.btn_sharing { width: 2.5rem; height: 2.5rem; border-radius: 100%; background-color: var(--dark_green1); border: 0.5 solid var(--dark_green1); /* background-color: #dad9cf; */}
+.btn_shoppingcart { margin: 0.5rem; width: 2.5rem; height: 2.5rem; border-radius: 100%; background-color: var(--dark_green1); border: 0.5 solid var(--dark_green1); } 
+.btn_sharing { width: 2.5rem; height: 2.5rem; border-radius: 100%; background-color: var(--dark_green1); border: 0.5 solid var(--dark_green1);  } 
 .btn_shoppingcart:hover,
-.btn_sharing:hover { /* background-color: white; */
- background-color: #dad9cf; transition: color 0.3s ease, background-color 0.3s ease; cursor: pointer; } 
+.btn_sharing:hover { background-color: #dad9cf; transition: color 0.3s ease, background-color 0.3s ease; cursor: pointer; } 
 .btn_shoppingcart,
 .btn_sharing { margin-top: 3rem; transition: color 0.3s ease, background-color 0.3s ease; } 
 .btn_shoppingcart > img,
 .btn_sharing > img { width: 1rem; height: 1rem; margin-left: 0px !important; } 
 .best_items_box2 > img:hover { scale: 1.03; transition: all ease 0.3s; } 
-
-/* 
-.somokfst > h1, .somokfst > p { color: #dad9cf !important; } */
-
+ 
 
 
 /* 아래메뉴 */
 
-menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; height: 5em; border-radius: 1.5625rem 1.5625rem 0rem 0rem; } 
+menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; height: 5em; border-radius: 1.5625rem 1.5625rem 0rem 0rem; z-index: 3;} 
 .구구 ul { height: 6.25rem; position: sticky; top: 37.5rem; } 
 .hbg { float: left; margin-top: 10px; } 
 .hbg img { width: 1.875rem; margin-top: 10px; } 
@@ -81,6 +75,28 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
 .user img { width: 1.875rem; margin-top: 11px; } 
 .구구 li img { margin: 0.9375rem; } 
 .구구 li { margin-left: 0.3rem; } 
+ 
+
+
+/* 하단 메뉴바 바꾼 부분 */
+.texthd1 { position: absolute; top: 50%; left: 13%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
+ .hbg:hover .texthd1 { opacity: 1; background-color: white; } 
+.texthd2 { position: absolute; top: 48%; left: 29%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
+.nmi:hover .texthd2 { opacity: 1; background-color: white; } 
+
+ .texthd3 { position: absolute; top: 30%; left: 48%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: white; font-size: 13px; font-weight: bold; } 
+.mid:hover .texthd3 { opacity: 1; background-color: #DAD9CF; text-align: center; } 
+
+ .texthd4 { position: absolute; top: 43%; left: 70%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
+.heart:hover .texthd4 { opacity: 1; background-color: white; } 
+ .texthd5 { position: absolute; top: 43%; left: 89%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
+.user:hover .texthd5 { opacity: 1; background-color: white; } 
+ 
+ 
+
+
+
+
 
  
 
@@ -116,7 +132,30 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .btn_sharing > img { width: 1rem; height: 1rem; margin-left: 0px !important; } 
  .original_price { font-size: 1.5rem; } 
  .sale_price { font-size: 2.5rem; } 
+
+ img { margin-left: 5rem; /* 80px = 5rem */ } 
+ .best_dgrm { width: 8.125rem; /* 130px = 8.125rem */
+ height: 8.125rem; /* 130px = 8.125rem */
+ border-radius: 50%; margin-left: 1rem; /* 45px = 2.8125rem */
+ margin-top: -3.125rem; /* -50px = -3.125rem */ } 
+ .best_dgrm p { font-size: 1.5625rem; /* 25px = 1.5625rem */
+ letter-spacing: 0.3125rem; /* 5px = 0.3125rem */
+ color: white; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; } 
+ .구구 { gap: 2rem; } 
+ 
+ /* 하단 메뉴바 바꾼 부분 */
+.texthd1 { left: 19%; } 
+.texthd2 { left: 32%; } 
+
+.texthd3 { font-size: 1.3rem; left: 50.5%; top: 25%; } 
+.texthd4 { left: 69%; top: 49%; } 
+.texthd5 { left: 82%; top: 49%; } 
+
+.texthd1, .texthd2, .texthd4, .texthd5 { font-size: 1rem; }  
+
  }
+ 
+
 
 @media screen and (min-width: 1440px){
  .allbox,
@@ -144,4 +183,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .btn_shoppingcart,
  .btn_sharing { margin-top: 5rem; } 
  .menu { padding-bottom: 5rem; } 
+ 
+ menu { display: none; } 
+ #page {width: 99vw;} 
  }

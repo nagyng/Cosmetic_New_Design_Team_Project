@@ -203,3 +203,88 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
  .menususu-content a:hover { background: #ffffff; } 
  .close-button { position: absolute; top: 14rem; left: 2rem; background: transparent; border: none; font-size: 40px; cursor: pointer; } 
  }
+
+
+
+ .texthd1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color:  rgba(76, 137, 151,1);
+    font-size: 14px;
+    font-weight: bold;
+  }  
+  .hbg:hover .texthd1 {
+    opacity: 1;
+    background-color: white;
+  }
+.texthd2 {
+    position: absolute;
+    top: 48%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color:  rgba(76, 137, 151,1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.nmi:hover .texthd2 {
+    opacity: 1;
+    background-color: white;
+  }
+
+  .texthd3 {
+    position: absolute;
+    top: 30%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.mid:hover .texthd3 {
+    opacity: 1;
+    background-color:  rgba(76, 137, 151,1);
+    text-align: center;
+  }
+
+  .texthd4 {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color:  rgba(76, 137, 151,1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.heart:hover .texthd4 {
+    opacity: 1;
+    background-color: white;
+  }
+  .texthd5 {
+    position: absolute;
+    top: 43%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color:  rgba(76, 137, 151,1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.user:hover .texthd5 {
+   
+    opacity: 1;
+    background-color: white;
+  }
+  
+  
+
