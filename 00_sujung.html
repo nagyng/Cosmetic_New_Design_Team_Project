@@ -4,49 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
- 
+
+    <!-- TODO : 1) Swiper js(캐러셀, 이미지 회전) css 넣기 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> 
+    />
+    <!-- TODO : AOS css: https://michalsnik.github.io/aos/ -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- css 모음-->
-    <link rel="stylesheet" href="./css/00_style.css" /> 
-    <link rel="stylesheet" href="./css/00_sujung.css">
-   
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="./css/00_sujung.css" />
+  
+    <!-- 수민 하단메뉴바 css -->
   </head>
-  <body> 
+  <body>
+    <!-- 본문 (달라짐)  -->
     <div class="EVENT">
-      <!-- 메인배너 --> 
-      <div class="somok">
-        <div class="menususu">
-          <button class="menususu-button">
-          <h1> somok</h1> 
-          </button>
-          <div class="menususu-content">
-            <a href="./index.html" class="MNSM">SOMOK</a>
-            <a href="./jini copy.html" class="mn1">PERSONAL SERVICE</a>
-            <a href="./brandinforsm.html" class="mn2">BRAND STORY</a>
-            <a href="./00_sujung.html" class="mn3">EVENT</a>
-            <a href="./best_ng.html" class="mn4">BEST</a>
-            <a href="./06_new-01.html" class="mn5">NEW</a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="SJmain clear">  
+      <!-- 메인배너 -->
+      <div class="SJmain clear">
+        <!-- <div class="image-container">
+          <img src="./img/반투명 배너.jpg" alt="배너사진" id="image" class="hidden">
+         </div> -->
         <div class="mainposition">
+          <div class="somokk">
+            <div class="menususu">
+              <div class="menususu1">
+                <button class="menususu-button">
+                </button>
+              </div>
+              <div class="menususu-content">
+                <a href="./index.html" class="MNSM">SOMOK</a>
+                <a href="./jini copy.html" class="mn1">PERSONAL SERVICE</a>
+                <a href="./brandinforsm.html" class="mn2">BRAND STORY</a>
+                <a href="./00_sujung.html" class="mn3">EVENT</a>
+                <a href="./best_ng.html" class="mn4">BEST</a>
+                <a href="./06_new-01.html" class="mn5">NEW</a>
+              </div>
+            </div>
+          </div>
           <div class="swiper mySwiper clear">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"> 
+              <div class="swiper-slide">
+                <!-- TODO : 1번째 배경이미지 -->
                 <div class="banner"></div>
-            </div>
-
-              <div class="swiper-slide"> 
+              </div>
+              <div class="swiper-slide">
+                <!-- TODO : 2번째 배경이미지 -->
                 <div class="blackmain"></div>
               </div>
             </div>
@@ -243,64 +248,76 @@
         <div class="menubar">
           <ul class="구구">
             <li>
-              <div a href="#" class="hbg">
-                <img src="./img/메뉴바 1-1.jpg" alt="장바구니메뉴" />
-              </div>
+              <a href="./brandinforsm.html">
+                <div a href="./brandinforsm.html" class="hbg">
+                  <span class="texthd1">BRAND<br />STORY</span>
+                  <img src="./img/sj_btm.png" alt="장바구니메뉴" />
+                </div>
+              </a>
             </li>
 
             <li>
+              <a href="./00_sujung.html">
               <div a href="#" class="nmi">
-                <img src="./img/나뭇잎 1-1.jpg" alt="장바구니메뉴" />
+                <span class="texthd2">&nbsp;<br />EVENT<br />&nbsp;</span>
+                <img src="./img/sj_btm.png" alt="장바구니메뉴" />
               </div>
+            </a>
             </li>
 
             <li class="mid">
-              <div a href="#" class="dgrm">
-                <p>SOMOK</p>
-              </div>
+              <a href="./jini copy.html">
+                <span class="texthd3">PERSONAL<br />SERVICE</span>
+                <div a href="./jini copy.html" class="dgrm">
+                  <p>SOMOK</p>
+                </div>
+              </a>
             </li>
             <li>
-              <div a href="#" class="heart">
-                <img src="./img/하트 1-1.jpg" alt="장바구니메뉴" />
-              </div>
+              <a href="./06_new-01.html">
+                <div a href="./06_new-01.html" class="heart">
+                  <span class="texthd4">&nbsp;<br />NEW<br />&nbsp;</span>
+                  <img src="./img/sj_btm.png" alt="장바구니메뉴" />
+                </div>
+              </a>
             </li>
             <li>
-              <div a href="#" class="user">
-                <img src="./img/유저 1-1.jpg" alt="장바구니메뉴" />
-              </div>
+              <a href="./best_ng.html">
+                <div a href="./best_ng.html" class="user">
+                  <span class="texthd5">&nbsp;<br />BEST<br />&nbsp;</span>
+                  <img src="./img/sj_btm.png" alt="장바구니메뉴" />
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </menu>
     </div>
 
-    <!--  jquery cdn(인터넷주소) -->
+    <!-- TODO : jquery cdn(인터넷주소) -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Typed.js 플러그인 인터넷주소 -->
+    <!-- TODO : Typed.js 플러그인 인터넷주소 -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!--  2) Swiper JS: 공식사이트) https://swiperjs.com/demos -->
+    <!-- TODO : 2) Swiper JS: 공식사이트) https://swiperjs.com/demos -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!--  AOS js: https://michalsnik.github.io/aos/ -->
+    <!-- TODO : AOS js: https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--  isotope cdn(인터넷주소) -->
+    <!-- TODO : isotope cdn(인터넷주소) -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
     <!-- 팀원 js 모음 -->
 
     <!-- 메인화면 호버메뉴바 -->
-
+  <script src="../2차 프로젝트용/js/sumin/slidemenu.js"></script>
     <!-- 슬라이드메뉴 -->
     <script src="/js/00_sujung.js"></script>
-    <script>document
-        .querySelector(".menususu")
-        .addEventListener("mouseover", function () {
-          this.classList.add("active"); // 메뉴 열기
-        });
-        
-        document
-        .querySelector(".menususu")
-        .addEventListener("mouseleave", function () {
-          this.classList.remove("active"); // 메뉴 닫기
-        });</script>
+    <script>
+      $(function () {
+         $("#big-button").click(function() {
+           alert("사전 예약 마감 시, 현장 접수를 통해 입장가능하나 대기시간이 소요될 수 있습니다.",
+           "공간이 협소하여 현장 접수시 인원 제한이 있을 수 있으니 양해 부탁드립니다.",
+           "전시 특별 리워드는 재고 소진 시 마감될 수 있습니다.")
+         })})
+    </script>
   </body>
 </html>
