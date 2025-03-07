@@ -2,8 +2,9 @@
 
 html { overflow-x: hidden; width: 100%; height: auto; } 
 body { overflow-x: hidden; height: 100%; } 
- footer { overflow-y: hidden; overflow-x: hidden; } 
-.bestbanner_container { height: 10rem; width: 100%; position: relative; padding-bottom: 1rem; right: 1rem; float: left; } 
+main { width: 100%; height: auto;}
+footer { overflow-y: hidden; overflow-x: hidden; margin-top: 3rem; } 
+.bestbanner_container { height: 10rem; width: 100%; position: relative; padding-bottom: 1rem; left: 0; right: 0; float: left; } 
 .bestbanner { width: 100%; height: 100%; margin: 0; position: absolute; overflow: hidden; object-fit: cover; } 
 .bestbanner_text_large { font-size: 1.5rem; margin-top: 6rem; font-family: "DM Serif Display", serif; font-weight: lighter; float: right; letter-spacing: 0.1875rem; } 
 
@@ -28,11 +29,14 @@ body { overflow-x: hidden; height: 100%; }
 .best_menulist_all::before { background: url("../img/best_img/best_texture1.jpg") no-repeat center/cover; } 
 .best_menulist_lipbalm::before { background: url("../img/best_img/best_texture2.jpg") no-repeat center/cover; } 
 .best_menulist_suncream::before { background: url("../img/best_img/best_texture4.jpg") no-repeat center/cover; } 
-.best_menulist_moisturizer::before { background: url("../img/best_img/best_texture6.jpg") no-repeat center/cover; } 
+.best_menulist_moisturizer::before { background: url("../img/best_img/best_texture7.jpg") no-repeat center/cover; } 
+
+
+.best_body { min-height: 45rem; }
 
 .best_items_content { width: 100%; height: auto; background-color: white; float: left; } 
 .best_items { padding: 1rem; width: 100%; height: 20rem; background-color: white; float: left; } 
-.best_items:hover { color: #ff8484; } 
+.best_items:hover { color: #dad9cf; } 
 
 .best_items_box1 { width: 50%; float: left; } 
 .best_items_box2 { padding: 1rem 0; width: 50%; text-align: center; align-items: center; justify-content: center; object-fit: contain; float: left; height: auto; } 
@@ -66,7 +70,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
 .hbg img { width: 1.875rem; margin-top: 10px; } 
 .nmi { float: left; margin-top: 10px; } 
 .nmi img { width: 1.875rem; } 
-.best_dgrm { box-sizing: border-box; border-radius: 50%; width: 5rem; height: 5rem; background-color: #DAD9CF; border: 1px solid white; text-align: center; display: flex; justify-content: center; margin: -1.1rem 1rem 1rem -0.8rem; } 
+.best_dgrm { box-sizing: border-box; border-radius: 50%; width: 5rem; height: 5rem; background-color: #DAD9CF; border: 1px solid white; text-align: center; display: flex; justify-content: center; margin: -1rem 1rem 1rem 1rem; } 
 .구구 { display: flex; justify-content: center; gap: 0.1rem; } 
 .best_dgrm > p { font-size: 1.2rem; display: flex; align-items: center; justify-content: center; font-family: "DM Serif Display", serif; color: white; text-align: center; } 
 .heart { float: left; margin-top: 7px; margin-left: -0.4rem; } 
@@ -100,12 +104,13 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
 
  
 
-@media screen and (min-width: 375px) and (max-width: 767px){
- .btn_shopall { width: 7rem; height: 2rem; margin-right: 0rem; } 
- .btn_shopall > p { font-size: 0.75rem; margin-top: 0.3rem; } 
+@media screen and (min-width: 375px) and (max-width: 767px){  
+.btn_shopall { width: 8rem; height: 2rem; margin-right: 0rem; } 
+ .btn_shopall > p {  padding-top: 0.2rem; margin: auto; text-align: center; align-items: center; font-size: 1rem; letter-spacing: 0.1875rem;  } 
  .btn_notification { width: 2rem; height: 2rem; } 
  .btn_notification > img { width: 1rem; height: 1rem; } 
- .bestbanner_text_large { margin-top: 2rem; margin-bottom: 1rem; } 
+ .bestbanner_text_large { margin-top: 2rem; margin-bottom: 1rem; }  
+
  }
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
@@ -116,6 +121,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .btn_shopall > p { margin: auto; text-align: center; align-items: center; justify-content: center; padding-top: 0.4rem; } 
  .btn_notification > img { width: 1.5rem; height: 1.5rem; margin: 0; padding: 0; text-align: center; align-items: center; justify-content: center; } 
 
+ .best_body { min-height: 60rem; }
  .best_menulist { width: 100%; height: auto; margin: 0; padding: 2rem 0; text-align: center; align-items: center; justify-content: center; float: left; } 
  .best_menulist_btn { font-size: 2rem; width: 50%; float: left; } 
  .best_items { margin: 0 auto; align-items: center; justify-content: center; background-color: white; width: 100%; height: auto; float: left; } 
@@ -173,7 +179,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .best_menulist { margin: 0; width: 100%; padding: 2rem 0; height: auto; text-align: center; align-items: center; justify-content: center; float: left; font-size: 2rem; } 
  .best_menulist_btn { width: 25%; float: left; } 
 
- .best_body { width: 70vw; padding: auto 10vw; margin: auto; align-items: center; justify-content: center; } 
+ .best_body { min-height: 50rem; width: 70vw; padding: auto 10vw; margin: auto; align-items: center; justify-content: center; } 
  .best_items { margin: 2rem auto; align-items: center; justify-content: center; background-color: white; width: 49%; height: 30rem; float: left; } 
  .best_items_box1 { padding: 1rem; width: 50%; float: left; } 
  .best_items_box2 { padding: 1rem 0; width: 50%; height: auto; text-align: center; align-items: center; justify-content: center; object-fit: contain; float: left; } 
@@ -185,5 +191,6 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .menu { padding-bottom: 5rem; } 
  
  menu { display: none; } 
- #page {width: 99vw;} 
+ #page {width: 99vw;}  
+ 
  }
