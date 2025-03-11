@@ -63,7 +63,6 @@ footer { overflow-y: hidden; overflow-x: hidden; margin-top: 3rem; }
 
 
 /* 아래메뉴 */
-
 menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; height: 5em; border-radius: 1.5625rem 1.5625rem 0rem 0rem; z-index: 3;} 
 .구구 ul { height: 6.25rem; position: sticky; top: 37.5rem; } 
 .hbg { float: left; margin-top: 10px; } 
@@ -79,22 +78,24 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
 .user img { width: 1.875rem; margin-top: 11px; } 
 .구구 li img { margin: 0.9375rem; } 
 .구구 li { margin-left: 0.3rem; } 
+
+.hbg, .nmi, .dgrm, .heart, .user { position: relative; }
+.texthd, .texthd2,  .texthd3,   .texthd4,  .texthd5 { left: 50%; }
+
  
 
 
 /* 하단 메뉴바 바꾼 부분 */
-.texthd1 { position: absolute; top: 50%; left: 13%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
- .hbg:hover .texthd1 { opacity: 1; background-color: white; } 
-.texthd2 { position: absolute; top: 48%; left: 29%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
-.nmi:hover .texthd2 { opacity: 1; background-color: white; } 
-
- .texthd3 { position: absolute; top: 30%; left: 48%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: white; font-size: 13px; font-weight: bold; } 
-.mid:hover .texthd3 { opacity: 1; background-color: #DAD9CF; text-align: center; } 
-
- .texthd4 { position: absolute; top: 43%; left: 70%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
+.texthd1 { position: absolute; top: 50%; left: 60%;  transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
+ .hbg:hover .texthd1 { opacity: 1;  background-color: white; }  
+.texthd2 { position: absolute; top: 48%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: #DAD9CF; font-size: 14px; font-weight: bold; } 
+.nmi:hover .texthd2 { opacity: 1; background-color: white; }   
+ .texthd3 { position: absolute; top: 30%; left: 51%;  transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color: white; font-size: 13px; font-weight: bold; } 
+.mid:hover .texthd3 { opacity: 1; background-color: #DAD9CF; text-align: center; }  
+ .texthd4 { position: absolute; top: 43%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
 .heart:hover .texthd4 { opacity: 1; background-color: white; } 
- .texthd5 { position: absolute; top: 43%; left: 89%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
-.user:hover .texthd5 { opacity: 1; background-color: white; } 
+ .texthd5 { position: absolute; top: 43%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease-in-out; color:  #DAD9CF; font-size: 14px; font-weight: bold; } 
+.user:hover .texthd5 { opacity: 1; background-color: white; }  
  
  
 
@@ -150,15 +151,14 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; h
  .구구 { gap: 2rem; } 
  
  /* 하단 메뉴바 바꾼 부분 */
+/*  
 .texthd1 { left: 19%; } 
-.texthd2 { left: 32%; } 
-
+.texthd2 { left: 32%; }  
 .texthd3 { font-size: 1.3rem; left: 50.5%; top: 25%; } 
 .texthd4 { left: 69%; top: 49%; } 
-.texthd5 { left: 82%; top: 49%; } 
-
-.texthd1, .texthd2, .texthd4, .texthd5 { font-size: 1rem; }  
-
+.texthd5 { left: 82%; top: 49%; }  */ 
+.texthd3 { top: 18%; font-size: 1.4rem; left: 50.5%; }
+.texthd1, .texthd2, .texthd4, .texthd5 { font-size: 1rem; }   
  }
  
 

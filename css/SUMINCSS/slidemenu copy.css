@@ -57,7 +57,7 @@
         height: 1439px; /* 더 크게 */
         background: #fff;
         border: 1px solid #ffffff;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 3px 3px 10px rgba(25, 69, 57, 1);
         opacity: 0;
         transition: left 0.4s ease-out, opacity 0.3s ease-out;
         clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%); /* 대각선 유지 */
@@ -76,6 +76,7 @@
     .mn1, .mn2, .mn3, .mn4, .mn5 {
         font-size: 30px;
         margin-bottom: 2rem;
+        color: rgba(25, 69, 57, 1);;
     }
 
     .mn1 { margin-left: 8rem; }
@@ -94,7 +95,7 @@
         display: block;
         padding: 12px;
         text-decoration: none;
-        color: #333;
+        color: rgba(25, 69, 57, 1);
     }
 
     .menususu-content a:hover {

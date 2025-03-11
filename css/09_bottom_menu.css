@@ -1,26 +1,27 @@
 menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; bottom: 0; height: 5em; width: 100vw; border-radius: 1.5625rem 1.5625rem 0rem 0rem; z-index: 50; } 
 .구구 ul { height: 6.25rem; position: sticky; top: 37.5rem; } 
 
-.hbg { float: left; margin-top: 10px; } 
+.hbg { float: left; margin-top: 10px; position: relative; } 
 
 .hbg img { width: 1.875rem; margin-top: 10px; } 
-.nmi { float: left; margin-top: 10px; } 
+.nmi { float: left; margin-top: 10px; position: relative;} 
 .nmi img { width: 1.875rem; } 
-.dgrm { box-sizing: border-box; border-radius: 50%; width: 5rem; height: 5rem; background-color: var(--dark_green1); border: 1px solid white; text-align: center; margin-left: -0.8rem; display: flex; justify-content: center; margin: 1rem; margin-top: -1.1rem; font-size: 1.2rem; font-family: "DM Serif Display", serif; color: white; text-align: center; align-items: center; }
+.dgrm { position: relative; box-sizing: border-box; border-radius: 50%; width: 5rem; height: 5rem; background-color: var(--dark_green1); border: 1px solid white; text-align: center; margin-left: -0.8rem; display: flex; justify-content: center; margin: 1rem; margin-top: -1.1rem; font-size: 1.2rem; font-family: "DM Serif Display", serif; color: white; text-align: center; align-items: center; }
 .구구 { display: flex; justify-content: center; gap: 0.1rem; }
 
-.heart { float: left; margin-top: 7px; margin-left: -0.4rem; } 
+.heart { float: left; margin-top: 7px; margin-left: -0.4rem; position: relative;} 
 .heart img { width: 1.875rem; } 
-.user { float: left; margin-top: 7px; } 
+.user { float: left; margin-top: 7px; position: relative; } 
 .user img { width: 1.875rem; margin-top: 11px; } 
 
 .구구 li img { margin: 0.9375rem; } 
 
 .구구 li { margin-left: 0.3rem; } 
 .texthd1 {
+    align-items: center;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -35,7 +36,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
 .texthd2 {
     position: absolute;
     top: 48%;
-    left: 27%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -51,13 +52,14 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
   .texthd3 {
     position: absolute;
     top: 30%;
-    left: 51.5%;
+    left: 51%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     color: white;
     font-size: 13px;
     font-weight: bold;
+    z-index: 50;
 }
 .mid:hover .texthd3 {
     opacity: 1;
@@ -68,7 +70,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
   .texthd4 {
     position: absolute;
     top: 43%;
-    left: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -83,7 +85,7 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
   .texthd5 {
     position: absolute;
     top: 43%;
-    left: 92%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -118,10 +120,10 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
  gap: 2rem; } 
 
 .texthd1 {
-    left: 19%;
+    left: 50%;
 }
 .texthd2 {
-    left: 32%;
+    left: 50%;
 }
 
 .texthd3 {
@@ -130,11 +132,11 @@ menu { bottom: 0; position: fixed; background-color: white; left: 0; right: 0; b
     top: 25%;
 }
 .texthd4 {
-    left: 69%;
+    left: 50%;
     top: 49%;
 }
 .texthd5 {
-    left: 82%;
+    left: 50%;
     top: 49%;
 }
 

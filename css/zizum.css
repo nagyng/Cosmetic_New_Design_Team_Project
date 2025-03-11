@@ -8,7 +8,9 @@
  opacity: 0; transition: opacity 0.3s ease; } 
 
 .main_barsumin:hover .hover-img { opacity: 1; /* 마우스를 올렸을 때 이미지가 보이도록 설정 */}
-
+@media screen and (max-width: 300px){
+    .newrogo { display: none;}
+}
 /* 모바일 버전 (기본 설정) */
 @media screen and (max-width: 767px){
 
