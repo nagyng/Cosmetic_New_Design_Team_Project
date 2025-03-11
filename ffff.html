@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const messages = [
+  "첫 번째 배너 메시지입니다.",
+  "두 번째 배너 메시지입니다.",
+  "세 번째 배너 메시지입니다.",
+  "네 번째 배너 메시지입니다.",
+  "다섯 번째 배너 메시지입니다.",
+  "여섯 번째 배너 메시지입니다."
+];
+
+export default function SwipeTextBanner() {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOffset((prev) => (prev + 1) % messages.length);
+    }, 3000); // 3초마다 자동 전환
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="fixed bottom-0 w-full p-4 border-t rounded-t-2xl shadow-lg bg-white overflow-hidden">
+      <motion.div
+        className="flex gap-4"
+        animate={{ x: `-${offset * 20}%` }}
+        transition={{ duration: 0.5 }}
+      >
+        {messages.map((message, idx) => (
+          <div
+            key={idx}
+            className="min-w-[20%] h-16 flex items-center justify-center bg-gray-100 rounded-lg shadow-md p-2"
+          >
+            <p className="text-lg font-semibold text-center">{message}</p>
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+} 
+
+</body>
+</html>
